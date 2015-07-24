@@ -5,12 +5,13 @@
 int main()
 {
   int a=1;
-  std::cout << "a=" << a << std::endl;
-  if(a==1){
-    a=2;
+  std::cout << "Please pick a number from: [0-10]" << std::endl;
+  std::cin >> a;
+  if(a>10||a<0){
+    std::cout << "Follow instructions, yo" << std::endl;
   }else
     {
-      //This part never executes
+      std::cout << "thanks, yo" <<std::endl;
     }
   std::cout << "a=" << a << std::endl;
   return 0;
