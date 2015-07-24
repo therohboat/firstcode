@@ -2,17 +2,19 @@
 
 #include <iostream> //Include libraries which include standard things like cout, endl (you can see std::endl or std::cout)
 
+using namespace std;
+
 int main()
 {
   int a=1;
-  std::cout << "Please pick a number from: [0-10]" << std::endl;
-  std::cin >> a;
+  cout << "Please pick a number from: [0-10]" << endl;
+  cin >> a;
   if(a>10||a<0){
-    std::cout << "Follow instructions, yo" << std::endl;
+    cout << "Follow instructions, yo" << endl;
   }else
     {
-      std::cout << "thanks, yo" <<std::endl;
+      cout << "thanks, yo" << endl;
     }
-  std::cout << "a=" << a << std::endl;
+  cout << "a=" << a << endl;
   return 0;
 }
